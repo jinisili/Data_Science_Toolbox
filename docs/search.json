@@ -4,21 +4,42 @@
     "href": "index.html",
     "title": "Data_Science_Toolbox",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nJan 22, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nJan 19, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+    "text": "Quarto Blog\n\n\n\n\n\n\n\n\n\n\n\nJan 22, 2024\n\n\n김진실\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/Quarto Blog.html",
+    "href": "posts/Quarto Blog.html",
+    "title": "Quarto Blog",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "git 다운로드 링크 : https://git-scm.com/downloads\nquarto 다운로드 링크 : https://quarto.org/docs/download/\n\n- 블로그 생성\n\nwindow에 git, quarto 설치\ngithub에서 repository 생성\ncmd 또는 anaconda prompt 실행\n\ngit clone {repository_https_code}\ncd {repository_name}\nquarto create-project --type website:blog\ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages\n\n처음이라면 아래 설정 필요 (clone 후 실행)\n\ngit config --global user.name \"github_name\"\ngit config --global user.email \"github_email\"\n\n## **코드스페이스에서 블로그 생성**\n\n`-` 블로그 생성\n\n- 깃허브에서 repository 생성\n- codespaces 생성 및 실행\n\n```bash\n# workspaces에서\nwget {quarto_download_link}\nsudo dpkg -i {quarto_file_name}\n# main에서\nquarto create-project --type website:blog\ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages\n- 선택사항\n\nindex.qmd -&gt; 자기소개 추가\n\n_quarto.yml -&gt; 블로그 타이틀 설정\n\n- 블로그 포스트 업로드\n\nctrl + shift + p -&gt; jupyter notebook 생성\n포스트 내용 입력\n\ngit add .\ngit commit -m .\ngit push\ngit publish\n- 포스트 최상단에 raw 셀로 입력\n---\ntitle: \"post title\"\nauthor: \"name\"\ndate: \"month/date/year\"\n---"
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "posts/Quarto Blog.html#윈도우에서-블로그-생성",
+    "href": "posts/Quarto Blog.html#윈도우에서-블로그-생성",
+    "title": "Quarto Blog",
     "section": "",
-    "text": "This is a post with executable code."
+    "text": "git 다운로드 링크 : https://git-scm.com/downloads\nquarto 다운로드 링크 : https://quarto.org/docs/download/\n\n- 블로그 생성\n\nwindow에 git, quarto 설치\ngithub에서 repository 생성\ncmd 또는 anaconda prompt 실행\n\ngit clone {repository_https_code}\ncd {repository_name}\nquarto create-project --type website:blog\ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages\n\n처음이라면 아래 설정 필요 (clone 후 실행)\n\ngit config --global user.name \"github_name\"\ngit config --global user.email \"github_email\"\n\n## **코드스페이스에서 블로그 생성**\n\n`-` 블로그 생성\n\n- 깃허브에서 repository 생성\n- codespaces 생성 및 실행\n\n```bash\n# workspaces에서\nwget {quarto_download_link}\nsudo dpkg -i {quarto_file_name}\n# main에서\nquarto create-project --type website:blog\ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages\n- 선택사항\n\nindex.qmd -&gt; 자기소개 추가\n\n_quarto.yml -&gt; 블로그 타이틀 설정\n\n- 블로그 포스트 업로드\n\nctrl + shift + p -&gt; jupyter notebook 생성\n포스트 내용 입력\n\ngit add .\ngit commit -m .\ngit push\ngit publish\n- 포스트 최상단에 raw 셀로 입력\n---\ntitle: \"post title\"\nauthor: \"name\"\ndate: \"month/date/year\"\n---"
+  },
+  {
+    "objectID": "posts/Quarto Blog.html#코드를-숨기는-블로그",
+    "href": "posts/Quarto Blog.html#코드를-숨기는-블로그",
+    "title": "Quarto Blog",
+    "section": "코드를 숨기는 블로그",
+    "text": "코드를 숨기는 블로그\n- 아래는 코드를 깃허브에 업로드하는 코드\ngit add .\ngit commit -m .\ngit push\n- quarto publish는 아래 동작의 결합\nquarto render        # html 파일이 어딘가 생성\ngit switch gh-pages  # 만들어진 html 파일 복사\ngit add .\ngit commit -m .\ngit push\ngit switch main\n- 코드를 숨기는 블로그\n\nquarto publish만 실행"
+  },
+  {
+    "objectID": "posts/Quarto Blog.html#블로그-생성-원리",
+    "href": "posts/Quarto Blog.html#블로그-생성-원리",
+    "title": "Quarto Blog",
+    "section": "블로그 생성 원리",
+    "text": "블로그 생성 원리\n\n위의 내용으로 블로그를 생성하면 repository branch가 두 개 존재 : main, gh-pages\ngh-pages의 html 파일들이 블로그에 보여지는 것\n\n- branch switch를 하지 않고 publish를 하는 방법\ngit push origin --delete gh-pages  # 로컬에서 브랜치 삭제 후 원격으로 업데이트\ngit add .\ngit commit -m .\ngit push\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: docs # &lt;- 이 부분 추가\n\n\nhttps://github.com/{user-name}/{repo-name}/settings/pages 에서 branch를 main-docs로 변경\n\n- 앞으로는 아래 코드로 블로그 포스트 업로드 가능\nquarto render  # html 파일들을 docs에 저장\ngit add .\ngit commit -m .\ngit push"
+  },
+  {
+    "objectID": "posts/Quarto Blog.html#gh-pages를-생성하지-않고-블로그-생성",
+    "href": "posts/Quarto Blog.html#gh-pages를-생성하지-않고-블로그-생성",
+    "title": "Quarto Blog",
+    "section": "gh-pages를 생성하지 않고 블로그 생성",
+    "text": "gh-pages를 생성하지 않고 블로그 생성\n- 블로그 생성\n\n깃허브에서 repository 생성\nsetting main-docs로 변경\ncodespaces 생성 및 실행\n\n# workspaces에서\nwget {quarto_download_link}\nsudo dpkg -i {quarto_file_name}\n# main에서\nquarto create-project --type website:blog\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: docs # &lt;- 이 부분 추가\n\nquarto render\ngit add .\ngit commit -m .\ngit push"
   },
   {
     "objectID": "about.html",
