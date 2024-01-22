@@ -11,14 +11,21 @@
     "href": "posts/Quarto Blog.html",
     "title": "Quarto Blog",
     "section": "",
-    "text": "git 다운로드 링크 : https://git-scm.com/downloads\nquarto 다운로드 링크 : https://quarto.org/docs/download/\n\n- 블로그 생성\n\nwindow에 git, quarto 설치\ngithub에서 repository 생성\ncmd 또는 anaconda prompt 실행\n\ngit clone {repository_https_code}\ncd {repository_name}\nquarto create-project --type website:blog\ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages\n\n처음이라면 아래 설정 필요 (clone 후 실행)\n\ngit config --global user.name \"github_name\"\ngit config --global user.email \"github_email\"\n\n## **코드스페이스에서 블로그 생성**\n\n`-` 블로그 생성\n\n- 깃허브에서 repository 생성\n- codespaces 생성 및 실행\n\n```bash\n# workspaces에서\nwget {quarto_download_link}\nsudo dpkg -i {quarto_file_name}\n# main에서\nquarto create-project --type website:blog\ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages\n- 선택사항\n\nindex.qmd -&gt; 자기소개 추가\n\n_quarto.yml -&gt; 블로그 타이틀 설정\n\n- 블로그 포스트 업로드\n\nctrl + shift + p -&gt; jupyter notebook 생성\n포스트 내용 입력\n\ngit add .\ngit commit -m .\ngit push\ngit publish\n- 포스트 최상단에 raw 셀로 입력\n---\ntitle: \"post title\"\nauthor: \"name\"\ndate: \"month/date/year\"\n---"
+    "text": "git 다운로드 링크 : https://git-scm.com/downloads\nquarto 다운로드 링크 : https://quarto.org/docs/download/\n\n- 블로그 생성\n\nwindow에 git, quarto 설치\ngithub에서 repository 생성\ncmd 또는 anaconda prompt 실행\n\ngit clone {repository_https_code}\ncd {repository_name}\nquarto create-project --type website:blog\ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages\n\n처음이라면 아래 설정 필요 (clone 후 실행)\n\ngit config --global user.name \"github_name\"\ngit config --global user.email \"github_email\""
   },
   {
     "objectID": "posts/Quarto Blog.html#윈도우에서-블로그-생성",
     "href": "posts/Quarto Blog.html#윈도우에서-블로그-생성",
     "title": "Quarto Blog",
     "section": "",
-    "text": "git 다운로드 링크 : https://git-scm.com/downloads\nquarto 다운로드 링크 : https://quarto.org/docs/download/\n\n- 블로그 생성\n\nwindow에 git, quarto 설치\ngithub에서 repository 생성\ncmd 또는 anaconda prompt 실행\n\ngit clone {repository_https_code}\ncd {repository_name}\nquarto create-project --type website:blog\ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages\n\n처음이라면 아래 설정 필요 (clone 후 실행)\n\ngit config --global user.name \"github_name\"\ngit config --global user.email \"github_email\"\n\n## **코드스페이스에서 블로그 생성**\n\n`-` 블로그 생성\n\n- 깃허브에서 repository 생성\n- codespaces 생성 및 실행\n\n```bash\n# workspaces에서\nwget {quarto_download_link}\nsudo dpkg -i {quarto_file_name}\n# main에서\nquarto create-project --type website:blog\ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages\n- 선택사항\n\nindex.qmd -&gt; 자기소개 추가\n\n_quarto.yml -&gt; 블로그 타이틀 설정\n\n- 블로그 포스트 업로드\n\nctrl + shift + p -&gt; jupyter notebook 생성\n포스트 내용 입력\n\ngit add .\ngit commit -m .\ngit push\ngit publish\n- 포스트 최상단에 raw 셀로 입력\n---\ntitle: \"post title\"\nauthor: \"name\"\ndate: \"month/date/year\"\n---"
+    "text": "git 다운로드 링크 : https://git-scm.com/downloads\nquarto 다운로드 링크 : https://quarto.org/docs/download/\n\n- 블로그 생성\n\nwindow에 git, quarto 설치\ngithub에서 repository 생성\ncmd 또는 anaconda prompt 실행\n\ngit clone {repository_https_code}\ncd {repository_name}\nquarto create-project --type website:blog\ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages\n\n처음이라면 아래 설정 필요 (clone 후 실행)\n\ngit config --global user.name \"github_name\"\ngit config --global user.email \"github_email\""
+  },
+  {
+    "objectID": "posts/Quarto Blog.html#코드스페이스에서-블로그-생성",
+    "href": "posts/Quarto Blog.html#코드스페이스에서-블로그-생성",
+    "title": "Quarto Blog",
+    "section": "코드스페이스에서 블로그 생성",
+    "text": "코드스페이스에서 블로그 생성\n- 블로그 생성\n\n깃허브에서 repository 생성\ncodespaces 생성 및 실행\n\n# workspaces에서\nwget {quarto_download_link}\nsudo dpkg -i {quarto_file_name}\n# main에서\nquarto create-project --type website:blog\ngit add .\ngit commit -m .\ngit push\nquarto publish gh-pages\n- 선택사항\n\nindex.qmd -&gt; 자기소개 추가\n\n_quarto.yml -&gt; 블로그 타이틀 설정\n\n- 블로그 포스트 업로드\n\nctrl + shift + p -&gt; jupyter notebook 생성\n포스트 내용 입력\n\ngit add .\ngit commit -m .\ngit push\ngit publish\n- 포스트 최상단에 raw 셀로 입력\n---\ntitle: \"post title\"\nauthor: \"name\"\ndate: \"month/date/year\"\n---"
   },
   {
     "objectID": "posts/Quarto Blog.html#코드를-숨기는-블로그",
